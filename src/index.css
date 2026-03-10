@@ -53,7 +53,6 @@ button:hover,
 input:hover,
 textarea:hover,
 select:hover {
-	border: 1px solid #646cff;
 }
 
 select {
@@ -88,16 +87,17 @@ textarea {
 	border-radius: 8px;
 	box-sizing: border-box;
 }
-
+textarea::selection{
+	background-color: "Transparent";
+}
 input[type='text'],
 select,
 textarea {
-	border: 1px solid #ffffff;
+	margin-left: 0;
 }
 
 input:focus,
 textarea:focus {
-	border: 1px solid #646cff;
 }
 
 @media (prefers-color-scheme: light) {
